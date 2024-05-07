@@ -16,8 +16,6 @@ body {
   --color-menu: #000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* font-family: highgate, sans-serif; */
-  /* --cursor-stroke: #000; */
   --cursor-stroke-width: 1px;
 }
 
