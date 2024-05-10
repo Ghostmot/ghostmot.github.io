@@ -56,3 +56,44 @@
     window.Magnetic = Magnetic;
 
 })(jQuery);
+
+
+//
+$(document).ready(function() {
+  $('.make_payment h3').click(function() {
+    $('.cell-md-6').slideDown();
+  })
+  $('.make_payment h3').hover(function() {
+    $('.make_payment').css('background', 'rgb(216, 152, 216)').css('color', 'black');
+  }, function() {
+    $('.make_payment').css('background', 'black').css('color', '#fff');
+  })
+
+  $('.key').hover(function() {
+    $(this).css('width', '68px').css('height', '68px');
+  }, function() {
+    $(this).css('width', '48px').css('height', '48px');
+  })
+
+  $('.key').click(function() {
+    let value = $(this).text();
+    if (value === 'clear') {
+        $('.calculator_input').val('')
+        return;
+    }
+    let calValue = $('.calculator_input').val();
+    if (value === 'delete') {
+        let smtin = calValue.substring(0, calValue.length - 1);
+        $('.calculator_input').val(smtin);
+        return;
+    }
+    if (calValue.length === 0) {
+        $('.calculator_input').val(`£ ${value}`);
+        return;
+    } else {
+        $('.calculator_input').val(`${calValue}${value}`);
+        return;
+    }
+  })
+})
+//
