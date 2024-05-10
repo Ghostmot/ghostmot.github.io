@@ -68,7 +68,7 @@
       <div class="overlay__row"></div>
       <div class="overlay__row"></div>
 
-      <h1 class="title-uzi split-chars">GHOST MOT</h1>
+      <h1 style="font-family: var(--font-2);" class="title-uzi split-chars">GHOST MOT</h1>
 
       <div class="gallery">
         <figure data-scroll class="gallery__item">
@@ -335,6 +335,36 @@
             <line x1="7" y1="17" x2="17" y2="7" />
             <polyline points="7 7 17 7 17 17" />
           </svg>
+        </div>
+        <div class="make_payment">
+          <h3>PAYMENT HERE</h3>
+          <div class="cell-md-6" style="position: absolute;
+          top: 30%; width: 30%; height: 60%; border-radius: 10px;
+          padding: 120px 120px 400px 120px;
+          background: rgb(216, 152, 216); display: none;">
+            <div class="calculator" style="display: flex;
+            flex-direction: column; margin-top: -60px;">
+              <input style="font-weight: bold; font-size: 20px; padding: 12px 50px 12px 20px;
+              border-radius: 26px; border: none; align-self: center;
+              width: 200px; outline: none;" type="text" data-role="keypad" placeholder="Enter amount"
+              data-role-keypad="true" readonly="true" class="calculator_input">
+              <div class="calculator_keypad" style="width: 144px;">
+                <span class="key" style="width: 48px; height: 48px; line-height: 44px;">1</span>
+                <span class="key" style="width: 48px; height: 48px; line-height: 44px;">2</span>
+                <span class="key" style="width: 48px; height: 48px; line-height: 44px;">3</span>
+                <span class="key" style="width: 48px; height: 48px; line-height: 44px;">4</span>
+                <span class="key" style="width: 48px; height: 48px; line-height: 44px;">5</span>
+                <span class="key" style="width: 48px; height: 48px; line-height: 44px;">6</span>
+                <span class="key" style="width: 48px; height: 48px; line-height: 44px;">7</span>
+                <span class="key" style="width: 48px; height: 48px; line-height: 44px;">8</span>
+                <span class="key" style="width: 48px; height: 48px; line-height: 44px;">9</span>
+                <span class="key" style="width: 48px; height: 48px; line-height: 44px;">0</span>
+                <span class="key service-key" style="width: 48px; height: 48px; line-height: 44px;">delete</span>
+                <span class="key service-key" style="width: 48px; height: 48px; line-height: 44px;">clear</span>
+              </div>
+              <input type="button" value="continue" class="calculator_continue">
+            </div>
+        </div>
         </div>
 
         <div class="frame__line__low" line-triggerX=".frame__line__low"></div>
