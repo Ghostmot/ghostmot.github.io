@@ -160,6 +160,10 @@ body {
   .cell-md-6 {
     width: 80% !important;
   }
+  #paypal-container-QGFBYGVKH7CXJ {
+    margin-left: -100px;
+    padding-right: 0px !important;
+  }
 }
 
 .calculator_continue {
@@ -176,3 +180,10 @@ body {
   margin: 20px 0px;
 }
 
+#paypal-container-QGFBYGVKH7CXJ {
+  display: none;
+  top: 20%;
+  z-index: 1000;
+  background: inherit;
+  position: relative;
+}
