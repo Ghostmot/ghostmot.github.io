@@ -57,11 +57,13 @@
 
 })(jQuery);
 
-
 //
 $(document).ready(function() {
   $('.make_payment h3').click(function() {
-    $('.cell-md-6').slideDown();
+    const bodyWidth = $('body').width();
+    $('#paypal-container-QGFBYGVKH7CXJ ').slideDown();
+    $('#paypal-container-QGFBYGVKH7CXJ').css('padding', `50px 500px 50px ${bodyWidth / 3.459}px`);
+    return;
   })
   $('.make_payment h3').hover(function() {
     $('.make_payment').css('background', 'rgb(216, 152, 216)').css('color', 'black');
